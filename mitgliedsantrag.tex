@@ -1,0 +1,171 @@
+% Mitgliedsantrag für FunkFeuer Wien, 2019
+%
+% Basierend auf den LaTeX-Templates für Verträge von housing.funkfeuer.at
+% sowie dem FunkFeuer-Mitgliedsantragsformular von 2013
+
+\documentclass[parskip=half]{scrreprt}
+
+\usepackage{pdfpages}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage[juratotoc]{scrjura}
+%\usepackage[margin=2cm]{geometry}
+%\usepackage{geometry}
+% \usepackage[textheight=8in,footskip=60pt,bottom=1in]{geometry}
+\usepackage[a4paper,margin=1.5cm,top=1.6cm,bottom=4cm]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}% headers
+\usepackage{graphicx} % logo include
+\usepackage{color} % text colors
+\usepackage{setspace}
+
+\usepackage{paratype} % font
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage{amssymb}
+\usepackage{url}
+
+% FunkFeuer Colors
+\definecolor{ff-dark}{RGB}{39,49,66}
+\definecolor{ff-grey}{RGB}{85,98,112}
+\definecolor{ff-light}{RGB}{105,145,170}
+\definecolor{ff-red}{RGB}{242,58,20}
+\definecolor{ff-green}{RGB}{161,200,32}
+
+
+\usepackage{wrapfig}
+
+% header
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\includegraphics[width=3.9cm]{funkfeuer_wien.pdf}}
+%\fancyhead[L]{\textcolor{ff-grey}{\textbf{Verein zur Förderung freier Netze} - ZVR: 814804682} \\
+%	\textcolor{ff-grey}{Postfach 44, 1016 Wien, Österreich}}
+%\fancyhead[L]{\textcolor{ff-grey}{\textbf{Verein zur Förderung freier Netze}\\ZVR: 814804682}
+\fancyhead[L]{\textcolor{ff-grey}{\textbf{Verein zur Förderung freier Netze}\\\small vorstand@funkfeuer.at}
+}
+
+% footer
+%\fancyfoot[L]{\vskip -10pt~\includegraphics[width=1.5cm]{logo.pdf}}
+% \fancyfoot[C]{\textcolor{ff-dark}{FunkFeuer Wien - ZVR: 814804682 \\Postfach 5  ·  1096 Wien \\ IBAN: AT552023000000143982  ·  BIC/SWIFT: SPLSAT21}}
+\fancyfoot[L]{
+\begin{wrapfigure}{L}{1.6cm}
+\vspace{-15pt}
+\includegraphics[width=1.75cm]{logo.pdf}
+\end{wrapfigure}
+\vspace{-5pt}
+\fontsize{7}{8} \selectfont
+\textcolor{ff-grey}{\hspace*{-1mm}Postanschrift:\\FunkFeuer Wien\\ Postfach 44\\ 1016 Wien}
+}
+\fancyfoot[C]{\fontsize{7}{8} \selectfont \textcolor{ff-grey}{\\ZVR: 814804682\\UID: ATU67830859\\BIC/SWIFT: SPLSAT21\\ IBAN: AT552023000000143982}
+}
+\fancyfoot[R]{\textcolor{ff-grey}{\thepage/\pageref{LastPage}}}
+
+% lines
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\headrule}{\hbox to\headwidth{%
+  \color{ff-green}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\footrule}{\hbox to\headwidth{%
+  \color{ff-light}\leaders\hrule height \footrulewidth\hfill}}
+% section colors
+\usepackage{sectsty} % autocolor sections
+\chapterfont{\color{ff-grey}}  % sets colour of chapters
+\sectionfont{\color{ff-grey}}  % sets colour of sections
+% Text color
+\color{ff-dark}
+
+
+
+\begin{document}
+\section*{\\Mitgliedsantrag}
+\thispagestyle{fancy}
+
+Mit meiner Unterschrift beantrage die Aufnahme in den Verein FunkFeuer
+Wien.
+
+\vspace{0.5 cm}
+\begin{tabular}{p{7cm}p{.5cm}l}
+\dotfill \\
+Name
+\end{tabular}
+\hfill
+\begin{tabular}{p{7cm}p{.5cm}l}
+\dotfill \\
+Nickname
+\end{tabular}
+
+\vspace{0.5cm}
+\begin{tabular}{p{7cm}p{.5cm}l}
+\dotfill \\
+Emailadresse
+\end{tabular}
+\hfill
+\begin{tabular}{p{7cm}p{.5cm}l}
+\dotfill \\
+Telefonnummer
+\end{tabular}
+
+\vspace{0.5cm}
+\begin{tabular}{p{7cm}p{.5cm}l}
+\dotfill \\
+Postanschrift
+\end{tabular}
+\hfill
+\begin{tabular}{p{7cm}p{.5cm}l}
+\dotfill \\
+Meine Motivation mitzumachen
+\end{tabular}
+
+
+
+\subsection*{$\square$ Ich beantrage die ordentliche Mitgliedschaft im Verein}
+Durch Auswahl dieser Option beantrage ich die ordentliche
+Mitgliedschaft im Verein.
+% Damit erlange ich insbesondere das
+%passive und aktive Wahlrecht, das heißt das Recht, bei Abstimmungen
+%im Verein zu kandidieren sowie zu selbst wählen.
+Wähle ich diese Option nicht, beantrage ich die außerordentliche
+Mitgliedschaft.
+
+Über meinen Mitgliedsantrag entscheidet der Vorstand statutengemäß.
+% siehe \url{https://wiki.funkfeuer.at/images/1/14/Statuten_Funkfeuer_Wien.pdf}.
+
+\subsection*{$\square$ Ich stimme der Verarbeitung meiner hier festgehaltenen Daten für Zwecke des Vereins zu}
+\begin{itemize}
+    \item Die Emailadresse wird zu einer vom Vereinsvorstand
+        verwalteten, vom Verein betriebenen Mitglieder-Mailingliste
+        \url{members-wien@lists.funkfeuer.at} hinzugefügt. Über diese
+        Liste lädt der Vorstand zu Generalversammlungen.
+    \item Weiters speichert der Verein die Daten in seiner
+        Mitgliederdatenbank \url{https://portal.funkfeuer.at/}.
+        Betreibt ein Mitglied FunkFeuer-Knoten, so werden die Daten
+        anderen Mitgliedern zum Zwecke der Kontaktaufnahme sichtbar
+        gemacht. Das gilt auch für Standortdaten von etwaigen Knoten.
+    \item Standort der verarbeitenden Server und der Backups ist Österreich.
+    \item Sonstige Datenverarbeitung durch den Verein findet nicht statt.
+\end{itemize}
+
+\textbf{Hinweis:} Auf eigenen Wunsch und durch selbsttätige Anmeldung ist eine
+Teilnahme an anderen Vereinsdiensten sowie dem Verein durch Freiwillige
+zur Nutzung zur Verfügung gestellten Diensten möglich (andere
+Mailinglisten, Wiki, Chat, Forum usw.). Diese Dienste informieren
+separat über ihre Datenverarbeitungsvorgänge!
+
+
+\vspace{1.5cm}
+\begin{tabular}{p{7cm}p{.5cm}l}
+\dotfill \\
+Ort, Datum
+\end{tabular}
+\hfill
+\begin{tabular}{p{7cm}p{.5cm}l}
+\dotfill \\
+Unterschrift
+\end{tabular}
+
+
+\end{document}
